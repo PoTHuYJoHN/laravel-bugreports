@@ -1,0 +1,24 @@
+{
+  "name": "webkid/bugreporter",
+  "description": "A php class for Laravel to send bug reports with data",
+  "keywords": ["laravel", "bug", "report", "ukietech"],
+  "license" : "MIT",
+  "authors": [
+    {
+      "name": "Ivan Kolodii",
+      "homepage": "https://john.if.ua"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "laravel/framework": "5.1.*",
+    "jenssegers/agent": "^3.0@dev",
+  },
+  "autoload": {
+    "psr-4": {
+      "Webkid\\Bugreporter\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
