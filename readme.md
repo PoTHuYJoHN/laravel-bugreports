@@ -9,7 +9,7 @@ Add the service provider to `config/app.php` under `providers`:
         Webkid\BugReporter\BugReporterServiceProvider::class,
     ]
 
-Publish Assets
+Publish Config
 
 	php artisan vendor:publish --provider="Webkid\BugReporter\BugReporterServiceProvider"
 
