@@ -43,6 +43,7 @@ class Reporter
 	{
 		$this->e = $e;
 		//Check if enabled
+
 		if(!config('bugreports.reports_enable', false) || $this->agent->isRobot()) return true;
 
 		$request = app()->request;
@@ -101,7 +102,7 @@ class Reporter
 	{
 		$e = $this->e;
 		$report_default_message = app()->request->isJson() &&  $request->method() !== 'GET' ? 'form_validation_error' : 'no_message_title_from_exception';
-		$token = config('bugreports.token');
+		$token = config('bugreports.reports_token');
 
 		if($type === self::TYPE_JS && is_array($e)) {
 			// Build data array
