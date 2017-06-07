@@ -28,7 +28,10 @@ Update app/Exceptions/Handler.php file:
 		return parent::report($e);
 	}
 	
+	
+	
 Also provide environment variables:
+
 	UKIE_REPORTS_ENABLE=true
 	UKIE_REPORTS_URL=
 	UKIE_REPORTS_TOKEN=
