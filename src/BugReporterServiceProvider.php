@@ -27,7 +27,7 @@ class BugReporterServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		$this->app['bugreporter'] = $this->app->share(function ($app)
+		$this->app->singleton('bugreporter', function($app)
 		{
 			return new Reporter();
 		});
